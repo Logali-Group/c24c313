@@ -1,0 +1,12 @@
+<mvc:View
+        controllerName="com.logaligroup.invoices.controller.App"
+        xmlns="sap.m"
+        xmlns:mvc="sap.ui.core.mvc">
+
+    <Shell id="shell">
+        <App id="app">
+
+        </App>
+    </Shell>
+
+</mvc:View>

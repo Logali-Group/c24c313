@@ -1,0 +1,23 @@
+<mvc:View 
+        controllerName="com.logaligroup.invoices.controller.Main"
+        xmlns="sap.m"
+        xmlns:mvc="sap.ui.core.mvc">
+        
+    <Page id="page" title="{i18n>title}">
+        <content>
+
+            <Panel headerText="{i18n>helloPanel}">
+
+                <content>
+                    <Button
+                            text="{i18n>showHelloButtonText}"
+                            type="Critical"
+                            press="onShowMessage"/>
+                </content>
+                
+            </Panel>
+
+        </content>
+    </Page>
+
+</mvc:View>
