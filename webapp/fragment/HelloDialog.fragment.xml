@@ -1,0 +1,42 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+    xmlns:form="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+
+    <Dialog
+            id="helloDialog"
+            title="{i18n>hello} {view>/recipient/name}">
+
+            <content>
+                <form:SimpleForm
+                        editable="true">
+                    <form:content>
+                        <Label text="{i18n>labelName}"/>
+                        <Input value="{form>/FirstName}"/>
+                        <Label text="{i18n>lastName}"/>
+                        <Input value="{form>/LastName}"/>
+                    </form:content>
+                </form:SimpleForm>
+            </content>
+
+            <beginButton>
+                <Button
+                        text="{i18n>save}"
+                        tooltip="{i18n>save}"
+                        type="Accept"
+                        width="4rem"
+                        press="onSave"/>
+            </beginButton>
+
+            <endButton>
+                <Button
+                        text="{i18n>cancel}"
+                        tooltip="{i18n>cancel}"
+                        type="Reject"
+                        width="4rem"
+                        press="onCloseDialog"/>
+            </endButton>
+
+    </Dialog>
+
+</core:FragmentDefinition>

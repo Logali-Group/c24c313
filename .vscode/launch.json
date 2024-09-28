@@ -56,29 +56,29 @@
       }
     },
     {
-        "name": "Start Jorge",
-        "cwd": "${workspaceFolder}",
-        "runtimeArgs": [
-            "fiori",
-            "run"
-        ],
-        "type": "node",
-        "request": "launch",
-        "runtimeExecutable": "npx",
-        "args": [
-            "--open",
-            "test/flpSandbox.html"
-        ],
-        "windows": {
-            "runtimeExecutable": "npx.cmd"
-        },
-        "console": "internalConsole",
-        "internalConsoleOptions": "openOnSessionStart",
-        "outputCapture": "std",
-        "env": {
-            "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/invoices\"}",
-            "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false"
-        }
+      "name": "Start Jorge",
+      "cwd": "${workspaceFolder}",
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npx",
+      "args": [
+        "--open",
+        "test/flpSandbox.html"
+      ],
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/invoices\"}",
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false"
+      }
     }
   ],
   "compounds": [],

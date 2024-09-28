@@ -1,7 +1,5 @@
 import Controller from "sap/ui/core/mvc/Controller";
-import MessageToast from "sap/m/MessageToast";
-import ResourceModel from "sap/ui/model/resource/ResourceModel";
-import ResourceBundle from "sap/base/i18n/ResourceBundle";
+import JSONModel from 'sap/ui/model/json/JSONModel';
 
 /**
  * @namespace com.logaligroup.invoices.controller
@@ -12,11 +10,26 @@ export default class Main extends Controller {
 
     /*eslint-disable @typescript-eslint/no-empty-function*/
     public onInit(): void {
-
+        this.viewModel();
     }
 
-    public onShowMessage() : void {
-        let oResourceBundle = <ResourceBundle>(<ResourceModel>this.getView()?.getModel("i18n"))?.getResourceBundle();
-        MessageToast.show(oResourceBundle.getText("message") || 'no text defined');
+    private viewModel() : void {
+        const oData = {
+            recipient: {
+                name: "World"
+                // details:[
+                //     {
+                //         Text: "Test"
+                //     },
+                //     {
+                //         Text: "Test2"
+                //     }
+                // ]
+            }
+        };
+        const oModel = new JSONModel(oData);
+        this.getView()?.setModel(oModel, 'view');
     }
+
+
 }

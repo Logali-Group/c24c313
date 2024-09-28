@@ -1,0 +1,40 @@
+<mvc:View
+        controllerName="com.logaligroup.invoices.controller.HelloPanel"
+        xmlns="sap.m"
+        xmlns:core="sap.ui.core"
+        xmlns:mvc="sap.ui.core.mvc">
+
+    <Panel headerText="{i18n>helloPanel}"
+            class="sapUiResponsiveMargin"
+            width="auto">
+
+        <content>
+
+            <Button
+                        text="{i18n>helloDialogBut}"
+                        class="sapUiSmallMarginEnd"
+                        press="onOpenDialog"/>
+
+            <Button
+                    text="{i18n>showHelloButtonText}"
+                    press="onShowMessage"
+                    class="sapUiSmallMarginEnd"/>
+
+            <Input
+                    value="{view>/recipient/name}"
+                    description="{i18n>hello} {view>/recipient/name}"
+                    valueLiveUpdate="true"
+                    width="60%"/>
+
+            <Text   class="boldElements"
+                    text="{i18n>hello} {view>/recipient/name}"/>
+        </content>
+        
+    </Panel>
+
+    <core:Fragment id="Form01"
+                fragmentName="com.logaligroup.invoices.fragment.Form01"
+                type="XML"/>
+
+
+</mvc:View>

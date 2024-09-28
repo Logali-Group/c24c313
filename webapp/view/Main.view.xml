@@ -5,18 +5,9 @@
         
     <Page id="page" title="{i18n>title}">
         <content>
-
-            <Panel headerText="{i18n>helloPanel}">
-
-                <content>
-                    <Button
-                            text="{i18n>showHelloButtonText}"
-                            type="Critical"
-                            press="onShowMessage"/>
-                </content>
-                
-            </Panel>
-
+            <mvc:XMLView id="HelloPanel"
+                            viewName="com.logaligroup.invoices.view.HelloPanel"
+                            type="XML"/>
         </content>
     </Page>
 
