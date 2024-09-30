@@ -8,6 +8,10 @@
             <mvc:XMLView id="HelloPanel"
                             viewName="com.logaligroup.invoices.view.HelloPanel"
                             type="XML"/>
+
+            <mvc:XMLView id="InvoicesList"
+                        viewName="com.logaligroup.invoices.view.InvoicesList"
+                        type="XML"/>
         </content>
     </Page>
 

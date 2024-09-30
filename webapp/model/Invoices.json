@@ -1,0 +1,54 @@
+{
+  "Invoices": [
+    {
+      "ProductName": "HDD-Samsung 250Gb",
+      "Quantity": 21,
+      "ExtendedPrice": 87.2000,
+      "ShipperName": "Fun Inc.",
+      "ShippedDate": "2015-04-01T00:00:00",
+      "Status": "A"
+    },
+    {
+      "ProductName": "Display Dell UH850 4K 27",
+      "Quantity": 4,
+      "ExtendedPrice": 18.000,
+      "ShipperName": "ACME",
+      "ShippedDate": "2015-02-18T00:00:00",
+      "Status": "B"
+    },
+    {
+      "ProductName": "RAM PX DDR4 PC4-24000 16GB",
+      "Quantity": 3,
+      "ExtendedPrice": 6.85000,
+      "ShipperName": "ACME",
+      "ShippedDate": "2015-03-02T00:00:00",
+      "Status": "B"
+    },
+    {
+      "ProductName": "Intel Core i7-9700K 3.6Ghz",
+      "Quantity": 2,
+      "ExtendedPrice": 8.8000,
+      "ShipperName": "ACME",
+      "ShippedDate": "2015-04-12T00:00:00",
+      "Status": "C"
+    },
+    {
+      "ProductName": "AMD Radeon RX580 8GB GDDR5",
+      "Quantity": 1,
+      "ExtendedPrice": 32.71212,
+      "ShipperName": "Fun Inc.",
+      "ShippedDate": "2015-01-27T00:00:00",
+      "Status": "A"
+    }
+  ],
+  "List":[
+      {
+          "Key":"1",
+          "Text":"AAA"
+      },
+      {
+          "Key":"2",
+          "Text":"AAA"
+      }
+  ]
+}

@@ -1,0 +1,31 @@
+<mvc:View   controllerName="com.logaligroup.invoices.controller.InvoicesList"
+            xmlns="sap.m"
+            xmlns:mvc="sap.ui.core.mvc">
+
+        <List   id="List"
+                headerText="{i18n>invoicesListTitle}"
+                class="sapUiResponsiveMargin"
+                items="{invoices>/Invoices}"
+                width="auto">
+            <items>
+                <ObjectListItem id="ObjectListItem"
+                                title="{invoices>Quantity} x {invoices>ProductName}"
+                                number="{
+                                    parts:[
+                                        'invoices>ExtendedPrice',
+                                        'currency>/usd'
+                                    ],
+                                    type:'sap.ui.model.type.Currency',
+                                    formatOptions:{
+                                        showMeasure: false
+                                    }
+                                }"
+                                numberUnit="{currency>/usd}"
+                                numberState="{= 
+                                            (${invoices>ExtendedPrice} >= 00.00 &amp;&amp; ${invoices>ExtendedPrice} &lt;= 9.99)? 'Error' : 
+                                            (${invoices>ExtendedPrice} >= 10.00 &amp;&amp; ${invoices>ExtendedPrice} &lt;= 19.99)? 'Warning' : 
+                                            (${invoices>ExtendedPrice} >= 20.00 &amp;&amp; ${invoices>ExtendedPrice} &lt;= 39.99)? 'Success' : 'Information' }"/>
+            </items>
+        </List>
+
+</mvc:View>
