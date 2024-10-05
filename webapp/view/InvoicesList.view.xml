@@ -37,8 +37,6 @@
             <items>
                 <ObjectListItem id="ObjectListItem"
                                 title="{northwind>Quantity} x {northwind>ProductName}"
-                                type="Navigation"
-                                press="onNavToDetail"
                                 number="{
                                     parts:[
                                         'northwind>ExtendedPrice',

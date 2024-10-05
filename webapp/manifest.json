@@ -93,20 +93,12 @@
           "target": [
             "TargetMain"
           ]
-        },
-        {
-          "name":"RouteDetails",
-          "pattern":"detail/{path}",
-          "target":["TargetDetails"]
         }
       ],
       "targets": {
         "TargetMain": {
           "viewName": "Main"
-        },
-        "TargetDetails":{
-          "viewName":"Details"
-        } 
+        }
       }
     },
     "rootView": {
