@@ -31,5 +31,7 @@ export default class Main extends Controller {
         this.getView()?.setModel(oModel, 'view');
     }
 
+    //this.getOwnerComponent().getModel("i18n");        //Se utiliza cuando la aplicacion aun no esta lista
+    //this.getView().getModel("i18n");                  // Se utiliza cuando la aplicacion ya esta lista
 
 }
