@@ -7,7 +7,7 @@
                 headerText="{i18n>invoicesListTitle}"
                 class="sapUiResponsiveMargin"
                 items="{
-                    path: 'northwind>/Invoices',
+                    path: 'invoices>/Invoices',
                     filters:[
                         {
                             path: 'ExtendedPrice',
@@ -36,10 +36,10 @@
 
             <items>
                 <ObjectListItem id="ObjectListItem"
-                                title="{northwind>Quantity} x {northwind>ProductName}"
+                                title="{invoices>Quantity} x {invoices>ProductName}"
                                 number="{
                                     parts:[
-                                        'northwind>ExtendedPrice',
+                                        'invoices>ExtendedPrice',
                                         'currency>/usd'
                                     ],
                                     type:'sap.ui.model.type.Currency',
@@ -49,9 +49,9 @@
                                 }"
                                 numberUnit="{currency>/usd}"
                                 numberState="{= 
-                                            (${northwind>ExtendedPrice} >= 00.00 &amp;&amp; ${northwind>ExtendedPrice} &lt;= 09.99)? 'Error' : 
-                                            (${northwind>ExtendedPrice} >= 10.00 &amp;&amp; ${northwind>ExtendedPrice} &lt;= 19.99)? 'Warning' : 
-                                            (${northwind>ExtendedPrice} >= 20.00 &amp;&amp; ${northwind>ExtendedPrice} &lt;= 39.99)? 'Success' : 'Information' }">
+                                            (${invoices>ExtendedPrice} >= 00.00 &amp;&amp; ${invoices>ExtendedPrice} &lt;= 09.99)? 'Error' : 
+                                            (${invoices>ExtendedPrice} >= 10.00 &amp;&amp; ${invoices>ExtendedPrice} &lt;= 19.99)? 'Warning' : 
+                                            (${invoices>ExtendedPrice} >= 20.00 &amp;&amp; ${invoices>ExtendedPrice} &lt;= 39.99)? 'Success' : 'Information' }">
                     <firstStatus>
                         <ObjectStatus 
                         core:require="{
