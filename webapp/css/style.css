@@ -4,3 +4,10 @@
     font-weight: bold;
     margin-top: 7px;
 }
+
+.productRating {
+    padding: 0.75rem
+}
+.productRating .sapMRI {
+    vertical-align: initial;
+}

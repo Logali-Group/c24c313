@@ -1,9 +1,13 @@
 <mvc:View   controllerName="com.logaligroup.invoices.controller.Details"
             xmlns="sap.m"
-            xmlns:mvc="sap.ui.core.mvc">
+            xmlns:mvc="sap.ui.core.mvc"
+            xmlns:rating="com.logaligroup.invoices.control">
 
     <Page
-            title="{i18n>invoiceDetails}">
+            title="{i18n>invoiceDetails}"
+            showNavButton="true"
+            navButtonPress="onNavBack">
+
         <ObjectHeader title="{northwind>Quantity} x {northwind>ProductName}">
             <attributes>
                 <ObjectAttribute text="{northwind>ShipName}"/>
@@ -15,6 +19,10 @@
                 <ObjectAttribute text="{northwind>CustomerName}"/>
             </attributes>
         </ObjectHeader>
+        <rating:ProductRating
+                                id="rating"
+                                class="sapUiSmallMarginBeginEnd"
+                                change="onRatingChange"/>
     </Page>
 
 </mvc:View>
