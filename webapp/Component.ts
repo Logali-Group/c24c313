@@ -24,6 +24,5 @@ export default class Component extends BaseComponent {
 
         // set the device model
         this.setModel(createDeviceModel(), "device");
-
 	}
 }
